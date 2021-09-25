@@ -10,7 +10,7 @@ jobs:
         run: |
           ref="${GITHUB_REF##*/}"
           echo "::set-output name=ref::$(echo $ref)"
-          echo "::set-output name=image_full::$(echo ghcr.io/${GITHUB_REPOSITORY}:$ref)"
+          echo "::set-output name=image_full::$(echo ghcr.io/tille88/devops101:$ref)"
       - name: Checkout repo
         uses: actions/checkout@v2
         with:
